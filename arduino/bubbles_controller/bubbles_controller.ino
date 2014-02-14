@@ -29,7 +29,7 @@ int lastTweetCount = 0; // keep track of number of tweets
 unsigned long lastBubble;
 char tweetText[141];
 
-boolean debugMode = true;
+boolean debugMode = false;
 
 //---------------------------------------------
 void setup() {

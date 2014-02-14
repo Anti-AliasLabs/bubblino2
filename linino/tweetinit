@@ -1,0 +1,13 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006-2011 OpenWrt.org
+
+START=200
+
+start () {
+	ping stream.twitter.com:443 -c 5
+	python /root/tweet-controller.py
+}
+
+stop() {
+	killall python
+}
